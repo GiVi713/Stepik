@@ -6,14 +6,16 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int num = Convert.ToInt32(Console.ReadLine());
-            if ( num % 2 == 0)
+            int can = Convert.ToInt32(Console.ReadLine());
+            int tasks = Convert.ToInt32(Console.ReadLine());
+            int days = can / tasks;
+            if (can % tasks == 0)
             {
-                Console.WriteLine(num + 2);
+                Console.WriteLine(days);
             }
             else
             {
-                Console.WriteLine(num + 1);
+                Console.WriteLine(days + 1);
             }
         }
     }
